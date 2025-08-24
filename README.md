@@ -10,17 +10,17 @@ I expected to find a negative correlation between real estate prices and bankrup
 ### Data Sources
 
 The main source was destatis.de, Germany’s official statistical database.
-	•	Bankruptcies: one consistent dataset spanning 1990–2024.
-	•	Real estate prices: multiple datasets, each with different base years. This is a limitation, as indices were repeatedly reset to a new reference year.
+- Bankruptcies: one consistent dataset spanning 1990–2024.
+- Real estate prices: multiple datasets, each with different base years. This is a limitation, as indices were repeatedly reset to a new reference year.
 
 Data formats used: CSV, PDF, Excel.
 
 ### Data Preparation
 
 The most challenging dataset was the real estate index from 2000–2006, which was only available as a PDF in quarterly format.
-	•	Extracted with Camelot.
-	•	Cleaned with regex to remove text and NaNs.
-	•	Filtered for yearly averages (removing quarterly duplicates such as multiple “4. VJ” entries).
+- Extracted with Camelot.
+- Cleaned with regex to remove text and NaNs.
+- Filtered for yearly averages (removing quarterly duplicates such as multiple “4. VJ” entries).
 
 The later datasets (2008–2024) were more straightforward and provided annual or quarterly values. Bankruptcy data was filtered to the relevant periods: 2000–2005, 2008–2013, 2020–2024.
 
