@@ -1,0 +1,11 @@
+# data
+data/*.csv
+data/*.xlsx
+data/*.xls
+data/*.pdf
+!data/sample_*.*
+# python cache
+__pycache__/
+*.pyc
+# jupyter
+.ipynb_checkpoints/
